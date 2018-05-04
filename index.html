@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			/*body{overflow-x:hidden;}*/
+body,h1,h3,h4,h2,h5,h6,ul,ol,p,fieldset,dd,dl,input,textarea,option,hr,td{margin:0;padding:0;}
+a{text-decoration:none; color:#333;}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+li{list-style:none;float: left;}
+/*img{border:none; display:block;}*/
+a,input{outline:none;}
+body{font:12px "微软雅黑"; color:#666;height: 100%;width:100%;background:#f4f4f4;}
+		/*{
+			width: 1130px;
+			margin: 0 auto;
+			position: relative;
+		}*/
+		.div1{
+			width: 100%;
+			height: 56px;
+			background:#ffd100;
+			margin: 0 auto;
+			position: relative;
+		}
+		.div1 .img1{
+			position: absolute;top: 20px;left: 70px;
+		}
+		.div1 ul{
+			overflow: hidden;
+			height: 100%;
+			margin-left: 400px;
+		}
+		.div1>ul>li>a{
+			display: block;
+			height: 56px;
+			width: 76px;
+			text-align: center;
+			line-height: 56px;
+			font-size: 14px;
+			position: relative;
+		}
+		.div1 ul li .a1{
+			background:url(img/2.jpg) no-repeat;
+		    background-position: 50% 50%;
+		}
+		.div1 ul li .a3{
+			background: url(img/3.jpg) no-repeat;
+			background-position: 50% 50%;
+		}
+		.div1 ul li .a4{
+			background: url(img/4.jpg) no-repeat;
+			background-position: 50% 50%;
+		}
+		.div1>ul>li>a:hover{
+			background: #282828;
+			color: #ffd100;
+		}
+		.div1 .a2:hover{
+			background: none;
+		}
+		.div1 .b1 .b1_two{
+			background: white;
+			position: absolute;
+			z-index: 999;
+			left: 76px;
+			display:none;
+		}
+		.div1 .b1_two li{
+			width: 76px;
+			text-align: center;
+			line-height: 50px;
+		}
+		.div1 .b1_two li a{
+			display:inline-block;
+			width: 50px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			border-radius: 5px;
+		}
+		.div1 .b1_two li a:hover{
+			background: #ffd100;
+		}
+		.div2{ 
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			position: relative;
+			background:white;
+			min-height: 600px;
+		}
+		.div2 .u0{
+			display: inline-block;
+			width:1120px;height: 300px;
+			overflow: hidden;
+			position: relative;
+		}
+		.div2 .u0 li{
+			width:1120px;height: 300px;
+			position: absolute;
+			overflow: hidden;
+		}
+		.div2 .u0 li:nth-of-type(1){
+			z-index: 1;
+		}
+		.div2 .u0 li img{
+			width: 1120px;height: 300px;
+		}
+		.div2 .u0 span{
+			/*z-index:2;*/
+			display: block;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 45px;
+			font-size: 30px;
+			background: white;
+			color: #ffd100;
+			position: absolute;
+			opacity: 0.5;
+		}
+		.div2 .u0  #next{
+			right: 20px;
+			top: 150px;
+		}
+		.div2 .u0  #prev{
+			left: 20px;
+			top: 150px;
+		}
+		.div2 .u1{
+			margin-top: 17px;
+			display: inline-block;
+		}
+		.div2 .u1 li{
+			margin-left: 20px;
+		}
+		.div2 .u2{
+			overflow: hidden;
+			margin-top: 60px;
+			margin-left: 480px;
+		}
+		.div2 .u2 a{
+			display: block;
+			width: 63px;
+			font-size: 15px;
+			margin-left: 63px;
+			padding-bottom: 18px;
+		}
+		.div2 .u2 a:hover{
+			border-bottom:2px solid #444444 ;
+		}
+		.div2 .img2{
+			position: absolute;
+			right: 150px;bottom: 0;
+			width: 150px;height: 50px;
+		}
+		.div3{
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			text-align:center;
+		}
+		.div3 ul{
+			overflow: hidden;
+			display: inline-block;
+			text-align: left;
+		}
+		.div3 ul li{
+			width: 210px;height: 308px;
+			background: white;
+			position: relative;
+			margin-left: 20px;
+		}
+		.div3 ul li>img{
+			width: 210px;
+			height: 157px;
+		}
+		.div3 ul li h2{
+			font-size: 13px;
+			margin-left: 15px;
+			margin-top: 5px;
+		}
+		.div3 ul li>span{
+			font-size: 10px;
+			margin-left: 15px;
+			color: darkgray;
+		}
+		.div3 ul li a{
+			float: left;
+			display: block;
+			margin-top: 20px;
+        	margin-left: 15px;
+			padding-left: 20px;
+		}
+		.div3 ul li .a1{
+			background: url(img/9.jpg) no-repeat 0 50%;
+		}
+		.div3 ul li .a2{
+			background: url(img/8.jpg) no-repeat 0 50%;
+		}
+		.div3 ul li .a3{
+			background: url(img/7.jpg) no-repeat 0 50%;
+		}
+		.div3 ul li p{
+			display: block;
+			height: 50px;
+			width: 100%;
+			border-top: 1px solid lightgray;
+			position: absolute;
+			bottom: 0;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-top: 10px;
+		}
+		.div3 ul li p img{
+		width: 24px;height: 24px;border-radius: 50%;
+		vertical-align: middle;
+		}
+		.div3 ul li p span{
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+		}
+		.div4{
+			width: 550px;
+			height: 40px;
+			margin: 40px auto;
+		}
+		.div4 li a{
+			display: block;
+			width: 38px;height: 38px;
+			border: 1px solid lightgray;
+			margin-left: 6px;
+			border-radius: 5px;
+			text-align: center;
+			line-height: 38px;
+			background: white;
+		}
+		.div5{
+			text-align: center;
+		}
+		.div6{
+			width: 100%;
+			margin: 20px auto;
+			position: relative;
+			text-align:center;
+			/*background: red;*/
+		}
+		.div6 ul{
+			/*overflow: hidden;*/
+			display: inline-block;
+			text-align: left;
+			position: relative;
+		}
+		.div6 ul li{
+			width: 210px;height: 308px;
+			position: relative;
+			margin-left: 20px;
+			background: white;
+		}
+		.div6 ul li h2{
+			font-size: 13px;
+			margin-left: 15px;
+			margin-top: 5px;
+		}
+		.div6 ul li>span{
+			font-size: 10px;
+			margin-left: 15px;
+			color: darkgray;
+		}
+		.div6 ul li a{
+			float: left;
+			display: block;
+			margin-top: 20px;
+        	margin-left: 15px;
+			padding-left: 20px;
+		}
+		.div6 ul li .a1{
+			background: url(img/9.jpg) no-repeat 0 50%;
+		}
+		.div6 ul li .a2{
+			background: url(img/8.jpg) no-repeat 0 50%;
+		}
+		.div6 ul li .a3{
+			background: url(img/7.jpg) no-repeat 0 50%;
+		}
+		.div6 ul li p{
+			display: block;
+			height: 50px;
+			width: 100%;
+			border-top: 1px solid lightgray;
+			position: absolute;
+			bottom: 0;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-top: 10px;
+		}
+		.div6 ul li p img{
+		width: 24px;height: 24px;border-radius: 50%;
+		vertical-align: middle;
+		}
+		.div6 ul li p span{
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+		}
+        .div6 .top1{
+        	display: block;
+        	position:relative;
+			top: -10px;        	
+        }
+        .div6 .top2{
+        	display: block;
+        	position: absolute;
+        	right: 0;top: -10px;
+        	color: indianred;
+        }
+        .div7{
+        	width: 100%;
+        	height: 228px;
+        	background: #282828;
+        	text-align: center;
+        }
+        .div7 .u1{
+        	display: inline-block;
+        	text-align: left;
+        	margin-top: 50px;
+        }
+        .div7 .u1 li a{
+        	color: #666666;
+        	display: block;
+        	margin-left: 40px;
+        	height: 42px;
+        	line-height: 42px;
+        	position: relative;
+        	width: 50px;
+        }
+		
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<img src="img/1.jpg" class="img1"/>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li class="b1">
+					<a href="#">发现</a>
+				    <ul class="b1_two">
+				    	<li><a href="#">平面</a></li>
+				    	<li><a href="#">平面</a></li>
+				    	<li><a href="#">平面</a></li>
+				    	<li><a href="#">平面</a></li>
+				    	<li><a href="#">平面</a></li>
+				    	<li><a href="#">平面</a></li>
+				    	<li><a href="#">平面</a></li>
+				    </ul>
+				</li>
+				<li><a href="#">同城</a></li>
+				<li><a href="#">职位</a></li>
+				<li><a href="#">活动</a></li>
+				<li><a href="#">素材</a></li>
+				<li><a href="#">课程</a></li>
+				<li><a href="#" class="a1"></a></li>
+				<li><a href="#" class="a2"></a></li>
+				<li><a href="#" class="a3"></a></li>
+				<li><a href="#" class="a4"></a></li>
+				<li><a href="#" class="a5">登录</a></li>
+				<li><a href="#" class="a6">注册</a></li>
+			</ul>
+			
+		
+		</div>
+		<!----------------------------------->
+		<div class="div2">
+			<ul class="u0">
+				<span id="prev"><</span>
+				<span id="next">></span>
+				<li><img src="img/3.png"/></li>
+				<li><img src="img/5.png"/></li>
+				<li><img src="img/2.png"/></li>
+				<li><img src="img/4.png"/></li>
+				<li><img src="img/1.png"/></li>
+			</ul>
+		<ul class="u1">
+			<li style="margin-left: 0px;"><a href="#"><img src="img/5.jpg"/></a></li>
+			<li><a href="#"><img src="img/5.jpg"/></a></li>
+			<li><a href="#"><img src="img/5.jpg"/></a></li>
+			<li><a href="#"><img src="img/5.jpg"/></a></li>
+			<li><a href="#"><img src="img/5.jpg"/></a></li>
+		</ul>
+		<ul class="u2">
+			<li><a href="#">首页推荐</a></li>
+			<li><a href="#">最新发布</a></li>
+			<li><a href="#">上升最快</a></li>
+		</ul>
+		<img src="img/01ae735a7018fda80120a123527b15.gif" class="img2"/>
+		
+		</div>
+		<!----------------------------------->
+		<div class="div3">
+		<ul>
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/0007155a0aa43ba801204a0e859077.jpg@80w_80h_1c_1e_1o_100sh.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/0007155a0aa43ba801204a0e859077.jpg@80w_80h_1c_1e_1o_100sh.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/0105d85ac1a3b5a801218207849d87.jpeg@260w_195h_1c_1e_1o_100sh.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/010cd25ac1d452a801218207f53431.jpeg@260w_195h_1c_1e_1o_100sh.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+			<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<br />
+		</ul>
+		
+		</div>
+		<!----------------------------------->
+		<ul class="div4">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">...</a></li>
+			<li><a href="#">99</a></li>
+			<li><a href="#">100</a></li>
+			<li><a href="#">></a></li>
+		</ul>
+		<!----------------------------------->
+		<div class="div5">
+			<img src="img/bg.jpg"/>
+		</div>
+		<!----------------------------------->
+		<div class="div6">
+			<ul>
+                <span class="top1">猜你喜欢</span>
+				<li style="margin-left: 0;">
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<li>
+				<img src="img/6.jpg"/>
+				<h2>左佐：“破坏”完美后呈...</h2>
+				<span>文章-专访-平面</span>><br />
+				<a href="#" class="a1">183</a>
+				<a href="#" class="a2">1</a>
+				<a href="#" class="a3">5</a>
+				<p><img src="img/04cc7958feb380a80121455063c665.jpg@80w_80h_1c_1e_1o_100sh.jpg"/><span>站酷奖</span></p>
+			</li>
+			<a href="#" class="top2">换一换</a>
+			</ul>
+		</div>
+		<!----------------------------------->
+		<div class="div7">
+			<ul class="u1">
+				<li><a href="#" class="a1"><img src="img/10.jpg" style="position:relative;top: 6px;"/>移动端</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">用户协议</a></li>
+				<li><a href="#">企业服务</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">中文</a></li>
+				<li><a href="#">English</a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"><img src="img/11.jpg"/></a></li>
+				<li><a href="#"><img src="img/12.jpg"/></a></li>
+			</ul>
+		</div>
+		
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/轮播.js"></script>
+	</body>
+</html>
